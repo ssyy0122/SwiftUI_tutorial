@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("ㅋㅋㅋㅋㅋㅋ!")
-            .fontWeight(.medium)
-            .font(.largeTitle)
+        //
+        Text("**Connect** on [Instagram](https://www.instagram.com/direct/inbox/)!")
+            .font(.system(size: 30))
         
     }
 }
@@ -19,5 +19,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }
