@@ -19,5 +19,6 @@ struct image01: View {
 struct image01_Previews: PreviewProvider {
     static var previews: some View {
         image01()
+        
     }
 }
