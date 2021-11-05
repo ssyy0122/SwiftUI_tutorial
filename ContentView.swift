@@ -8,16 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showDetails = false
     var body: some View {
-        MyView(helloFont: .title)
+        VStack {
+            Button(action: {
+                self.showDetails.toggle()
+            }) {
+                Text("OPEN")
+            }
+            if showDetails {
+                Text("HIHIHIHIHI")
+                    .font(.largeTitle)
+                    .lineLimit(4)
+            }
+        }
+        
+    }
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
             
         }
-}
-    
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-        
     }
 }
