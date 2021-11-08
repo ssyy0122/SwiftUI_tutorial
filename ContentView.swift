@@ -11,8 +11,17 @@ struct ContentView: View {
     @State var showDetails = false
     var body: some View {
         ZStack{
-    
             VStack {
+                HStack {
+                    Spacer()
+                    Text("ㅇㅏㅇ기모띠")
+                        .padding()
+                }
+                HStack {
+                    Text("곽희상병신")
+                        .padding()
+                    Spacer()
+                }
                 Button(action: {
                     self.showDetails.toggle()
                 }) {
@@ -24,7 +33,7 @@ struct ContentView: View {
                         .lineLimit(4)
                 }
                 Spacer()
-                
+
             }
             
         }
