@@ -10,21 +10,25 @@ import SwiftUI
 struct ContentView: View {
     @State var showDetails = false
     var body: some View {
-        VStack {
-            Button(action: {
-                self.showDetails.toggle()
-            }) {
-                Text("OPEN")
-            }
-            if showDetails {
-                Text("HIHIHIHIHI")
-                    .font(.largeTitle)
-                    .lineLimit(4)
-            }
-        }
-        
-    }
+        ZStack{
     
+            VStack {
+                Button(action: {
+                    self.showDetails.toggle()
+                }) {
+                    Text("OPEN")
+                }
+                if showDetails {
+                    Text("HIHIHIHIHI")
+                        .font(.largeTitle)
+                        .lineLimit(4)
+                }
+                Spacer()
+                
+            }
+            
+        }
+    }
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
