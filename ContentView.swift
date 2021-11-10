@@ -13,9 +13,17 @@ struct ContentView: View {
         ZStack{
             VStack {
                 HStack {
+                    Label("Heart Rate", systemImage: "heart.fill")
+                    
                     Spacer()
+                    HStack{
+            
+                        Label("ECG", image: "ecg")
+
+                    }
                     Text("ㅇㅏㅇ기모띠")
                         .padding()
+                    
                 }
                 HStack {
                     Text("곽희상병신")

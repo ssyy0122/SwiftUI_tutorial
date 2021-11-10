@@ -9,6 +9,9 @@ import SwiftUI
 
 struct image01: View {
     var body: some View {
+        TabView {
+            
+        }
         Image("img01")
             .clipShape(Circle())
 
